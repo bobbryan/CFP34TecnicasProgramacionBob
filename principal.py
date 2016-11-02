@@ -1,10 +1,8 @@
-#crear un menu para el juego
 import menu
-import funciones
 
+opcionDelMenuElegida = menu.mostrarMenuInicial()
 
-resultado = menu.mostrarMenuInicial()
+while (menu.validarOpcionesDelMenu(opcionDelMenuElegida) == False):
+    opcionDelMenuElegida = menu.mostrarMenuInicial()
 
-
-
-funciones.opcionesDelmenu(resultado)
+print("Bienvenido aljuego con la opcion",opcionDelMenuElegida)
