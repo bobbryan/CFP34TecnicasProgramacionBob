@@ -16,9 +16,12 @@ def mostrarMenuInicial():
 
 
 def validarOpcionesDelMenu(opcionElegida):
-    opcionesDelJuego = ("1", "2", "3")
+
+    opcionesDelJuego = ("1", "2","3")
 
     if opcionElegida in opcionesDelJuego:
         return True
-    else:
-        return False
+
+    return False
+
+
