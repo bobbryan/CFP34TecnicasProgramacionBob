@@ -15,7 +15,7 @@ def mostrarMenuInicial():
     return opcion
 
 
-def validarOpcionesDelMenu(opcionElegida):
+def opcionDelMenuValida(opcionElegida):
 
     opcionesDelJuego = ("1", "2","3")
 
@@ -24,4 +24,23 @@ def validarOpcionesDelMenu(opcionElegida):
 
     return False
 
+
+def mostrarTablero(tablero):
+
+
+    letras = ("A","B","C","D","E")
+    filaLetras = "   "
+    for letra in letras:
+        filaLetras = filaLetras + " " + letra
+    print(filaLetras)
+
+
+    for indice, elemento in enumerate (tablero):
+        filaEntera = ""
+
+        for  subElemento in  (elemento):
+            filaEntera = filaEntera + " " + subElemento
+
+        filaFinal =  str(indice + 1) + " |" + filaEntera
+        print(filaFinal)
 
