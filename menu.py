@@ -44,3 +44,4 @@ def mostrarTablero(tablero):
         filaFinal =  str(indice + 1) + " |" + filaEntera
         print(filaFinal)
 
+
