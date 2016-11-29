@@ -8,7 +8,7 @@ def jugar():
     print("---------------------------------------------------------")
     print("                 Ingrese una coordena")
     print("---------------------------------------------------------")
-    print("  Ingresa la FILA (letra), seguido de la COLUMNA (numero)")
+    print("         Ingresa la letra, seguido del  numero")
     print("---------------------------------------------------------")
 
 
@@ -23,5 +23,11 @@ def jugar():
     traduccionDeCoordenada = coordenadas.transformacionDeCoordenadas(coordenadasDelUsuario)
     print(traduccionDeCoordenada)
 
-    print(traduccionDeCoordenada[0])
-    print(traduccionDeCoordenada[1])
+    #print(traduccionDeCoordenada[0])
+    #print(traduccionDeCoordenada[1])
+
+    vecinos = coordenadas.buscaVecinos(traduccionDeCoordenada,nivelesPredeterminados.primerNivel)
+
+    print(vecinos)
+
+
