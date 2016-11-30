@@ -18,11 +18,18 @@ def transformacionDeCoordenadas(coordenada):
 def vecinoValido(coordenada,tablero):
     x = coordenada[0]
     y = coordenada[1]
+    limiteInferior =  -1
+    limiteSuperior =  5
+    if limiteInferior < x < limiteSuperior and limiteInferior < y < limiteSuperior:
+        return True
 
-    #TODO para saber si una coordenada es valida tengo que chequear:
+
+
+    # TODO para saber si una coordenada es valida tengo que chequear:
     # LIMITE_INFERIOR < X < LIMITE SUPERIOR
     # LIMITE_INFERIOR < Y < LIMITE SUPERIOR
     # Si las 4 cosas se cumples => True, sino False
+
 
 def buscaVecinos(coordenada,tablero):
 
@@ -33,6 +40,7 @@ def buscaVecinos(coordenada,tablero):
     verticalInferior = coordenaPrincipal[0] , int(coordenaPrincipal[1]) + 1
     horizontalDerecho = int(coordenaPrincipal[0]) + 1 , coordenaPrincipal[1]
     horizontalIzquierdo = int(coordenaPrincipal[0]) - 1 , coordenaPrincipal[1]
+
 
     if vecinoValido(verticalSuperior,tablero):
         vecinos.append(verticalSuperior)

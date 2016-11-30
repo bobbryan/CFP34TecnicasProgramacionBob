@@ -26,8 +26,7 @@ def jugar():
     #print(traduccionDeCoordenada[0])
     #print(traduccionDeCoordenada[1])
 
-    vecinos = coordenadas.buscaVecinos(traduccionDeCoordenada,nivelesPredeterminados.primerNivel)
-
+    vecinos = coordenadas.buscaVecinos(traduccionDeCoordenada ,nivelesPredeterminados.primerNivel)
     print(vecinos)
 
 
