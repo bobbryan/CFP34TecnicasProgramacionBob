@@ -1,10 +1,13 @@
 import nivelesPredeterminados
 import menu
 import coordenadas
+import copy
+import moduloDeUsuario
 
 def jugar():
     print("Bienvenido al juego en modo PREDETERMINADO")
-    menu.mostrarTablero(nivelesPredeterminados.primerNivel)
+    tablero = copy.deepcopy(nivelesPredeterminados.getTablero(moduloDeUsuario.nivelActual))
+    menu.mostrarTablero(tablero)
     print("---------------------------------------------------------")
     print("                 Ingrese una coordena")
     print("---------------------------------------------------------")
@@ -26,7 +29,11 @@ def jugar():
     #print(traduccionDeCoordenada[0])
     #print(traduccionDeCoordenada[1])
 
-    vecinos = coordenadas.buscaVecinos(traduccionDeCoordenada ,nivelesPredeterminados.primerNivel)
-    print(vecinos)
+    vecinos = coordenadas.buscaVecinos(traduccionDeCoordenada ,tablero)
+
+    #TODO cambiar luces en tablero para traduccionDeCoordenada y para vecinos
+
+
+
 
 

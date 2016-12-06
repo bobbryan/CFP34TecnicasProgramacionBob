@@ -21,7 +21,7 @@ nivelTresfila_tres   =[".",".","0",".","."]
 nivelTresfila_cuatro =["0",".","0",".","."]
 nivelTresfila_cinco  =["0",".","0","0","."]
 
-trecerNivel=[nivelTresfila_uno,nivelTresfila_dos,nivelTresfila_tres,nivelTresfila_cuatro,nivelTresfila_cinco]
+tercerNivel=[nivelTresfila_uno,nivelTresfila_dos,nivelTresfila_tres,nivelTresfila_cuatro,nivelTresfila_cinco]
 
 nivelCuatrofila_uno    =["0","0",".","0","0"]
 nivelCuatrofila_dos    =[".",".",".",".","."]
@@ -38,3 +38,21 @@ nivelCincofila_cuatro =["0","0",".",".","."]
 nivelCincofila_cinco  =["0","0",".",".","."]
 
 quintoNivel=[nivelCincofila_uno,nivelCincofila_dos,nivelCincofila_tres,nivelCincofila_cuatro,nivelCincofila_cinco]
+
+def getTablero(nivel):
+    if nivel == 1:
+        return primerNivel
+
+    if nivel == 2:
+        return segundoNivel
+
+    if nivel == 3:
+        return  tercerNivel
+
+    if nivel == 4:
+        return cuartoNivel
+
+    if nivel == 5:
+        return quintoNivel
+
+
