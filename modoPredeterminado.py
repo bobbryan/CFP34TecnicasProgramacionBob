@@ -8,6 +8,10 @@ def jugar():
     print("Bienvenido al juego en modo PREDETERMINADO")
     tablero = copy.deepcopy(nivelesPredeterminados.getTablero(moduloDeUsuario.nivelActual))
     menu.mostrarTablero(tablero)
+
+    #TODO hacer un bucle para ir jugando...
+
+
     print("---------------------------------------------------------")
     print("                 Ingrese una coordena")
     print("---------------------------------------------------------")
@@ -24,14 +28,12 @@ def jugar():
         coordenadasDelUsuario = coordenadas.pedirCoordenadas()
 
     traduccionDeCoordenada = coordenadas.transformacionDeCoordenadas(coordenadasDelUsuario)
-    print(traduccionDeCoordenada)
-
-    #print(traduccionDeCoordenada[0])
-    #print(traduccionDeCoordenada[1])
-
     vecinos = coordenadas.buscaVecinos(traduccionDeCoordenada ,tablero)
+    coordenadas.cambioDeCaracteres(traduccionDeCoordenada,tablero)
+    coordenadas.cambioDeVecino(vecinos, tablero)
+    menu.mostrarTablero(tablero)
 
-    #TODO cambiar luces en tablero para traduccionDeCoordenada y para vecinos
+
 
 
 

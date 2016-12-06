@@ -55,3 +55,21 @@ def buscaVecinos(coordenada,tablero):
         vecinos.append(horizontalIzquierdo)
 
     return vecinos
+
+
+caracteres = {"0": ".", ".": "0"}
+
+def cambioDeCaracteres(coordenada,tablero):
+    fila = coordenada[0]
+    columna = coordenada[1]
+
+    caracterCambiado = caracteres[tablero[fila][columna]]
+
+    tablero[fila][columna] = caracterCambiado
+
+
+def cambioDeVecino (vecinos,tablero):
+
+    for coordenadas in vecinos:
+        cambioDeCaracteres(coordenadas,tablero)
+
