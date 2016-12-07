@@ -10,8 +10,8 @@ def validarCoordenadas(coordenada):
 
 def transformacionDeCoordenadas(coordenada):
     diccionarioLetras = {'a':0,'b':1,'c':2,'d':3,'e':4}
-    columna = diccionarioLetras[coordenada[0]]
-    fila = int(coordenada[1]) - 1
+    fila  = diccionarioLetras[coordenada[0]]
+    columna = int(coordenada[1]) - 1
 
     return columna,fila
 
