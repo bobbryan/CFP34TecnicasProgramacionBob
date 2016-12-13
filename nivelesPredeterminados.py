@@ -32,9 +32,9 @@ nivelCuatrofila_cinco  =["0","0",".",".","."]
 cuartoNivel=[nivelCuatrofila_uno,nivelCuatrofila_dos,nivelCuatrofila_tres,nivelCuatrofila_cuatro,nivelCuatrofila_cinco]
 
 nivelCincofila_uno    =[".",".",".","0","0"]
-nivelCincofila_dos    =[".",".",".","0","0"]
+nivelCincofila_dos    =[".",".",".",".","0"]
 nivelCincofila_tres   =[".",".",".",".","."]
-nivelCincofila_cuatro =["0","0",".",".","."]
+nivelCincofila_cuatro =["0",".",".",".","."]
 nivelCincofila_cinco  =["0","0",".",".","."]
 
 quintoNivel=[nivelCincofila_uno,nivelCincofila_dos,nivelCincofila_tres,nivelCincofila_cuatro,nivelCincofila_cinco]
